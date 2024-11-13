@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root {
-  --bg-card: #0faf87;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -14,4 +10,28 @@ body {
 
 .container h1 {
   padding-top: 2rem;
+}
+
+button {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #b492e0, #fbc2eb);
+}
+
+button:disabled {
+  background: linear-gradient(45deg, #d3c2e6, #f0c8e8); /* Lighter gradient */
+  color: #b0b0b0; /* Lighter text */
+  cursor: not-allowed; /* No pointer cursor */
+  opacity: 0.6; /* Reduced opacity for disabled state */
 }
